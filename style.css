@@ -243,3 +243,20 @@ div.vocabulary{
 	margin: 5px auto 30px auto;
 	display: block;
 }
+
+
+@media screen and (max-device-width: 1024px) {
+	header, footer, .bg-light-grey{
+		width: 1160px;
+	}
+	
+	body{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	}
+
+	section{
+	  flex: 1;
+	}
+}
