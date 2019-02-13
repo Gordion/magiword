@@ -74,7 +74,7 @@ $(document).ready(function(){
 
   $("#log-button").on('click', function(e) {
     e.preventDefault();
-
+    console.log('click');
     var regData = $('#log-form').serialize();
 
     $.post( "https://hybro.in.ua/roma.php?/method=SignIn", regData)
