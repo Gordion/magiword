@@ -31,7 +31,7 @@ $(document).ready(function(){
     var regData = $('#reg-form').serialize();
     console.log(regData);
 
-    $.post( "https://hybro.in.ua/roma.php?/method=Register", regData)
+    $.post( "https://hybro.in.ua/roma.php?method=Register", regData)
       .done(function(data) {
         var response = JSON.parse(data);
         console.log(data, response);
@@ -77,7 +77,7 @@ $(document).ready(function(){
     console.log('click');
     var regData = $('#log-form').serialize();
 
-    $.post( "https://hybro.in.ua/roma.php?/method=SignIn", regData)
+    $.post( "https://hybro.in.ua/roma.php?method=SignIn", regData)
       .done(function(data) {
         var response = JSON.parse(data);
         console.log(data, response);
