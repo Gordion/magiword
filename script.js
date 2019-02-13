@@ -31,7 +31,7 @@ $(document).ready(function(){
     var regData = $('#reg-form').serialize();
     console.log(regData);
 
-    $.post( "http://transleet.somee.com/translationHelper/WebHandler.ashx?method=Register", regData)
+    $.post( "https://hybro.in.ua/roma.php?/method=Register", regData)
       .done(function(data) {
         var response = JSON.parse(data);
         console.log(data, response);
@@ -77,7 +77,7 @@ $(document).ready(function(){
 
     var regData = $('#log-form').serialize();
 
-    $.post( "http://transleet.somee.com/translationHelper/WebHandler.ashx?method=SignIn", regData)
+    $.post( "https://hybro.in.ua/roma.php?/method=SignIn", regData)
       .done(function(data) {
         var response = JSON.parse(data);
         console.log(data, response);
