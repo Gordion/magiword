@@ -80,8 +80,7 @@ $(document).ready(function(){
 
     $.post( "https://hybro.in.ua/roma.php?method=SignIn", regData)
       .done(function(response) {
-        var response = data;
-        console.log(data, response);
+        console.log(response);
 
         if (response.IsValid === "false") {
           alert(response.ERROR);
