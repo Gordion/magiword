@@ -30,10 +30,10 @@ $(document).ready(function(){
 
     var regData = $('#reg-form').serialize();
     console.log(regData);
-
+    
     $.post( "https://hybro.in.ua/roma.php?method=Register", regData)
       .done(function(data) {
-        var response = JSON.parse(data);
+        var response = data;
         console.log(data, response);
 
         if (response.IsValid === "false") {
@@ -77,9 +77,10 @@ $(document).ready(function(){
     console.log('click');
     var regData = $('#log-form').serialize();
 
+     var response = data;
     $.post( "https://hybro.in.ua/roma.php?method=SignIn", regData)
-      .done(function(data) {
-        var response = JSON.parse(data);
+      .done(function(response) {
+        
         console.log(data, response);
 
         if (response.IsValid === "false") {
