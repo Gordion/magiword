@@ -77,10 +77,10 @@ $(document).ready(function(){
     console.log('click');
     var regData = $('#log-form').serialize();
 
-     var response = data;
+
     $.post( "https://hybro.in.ua/roma.php?method=SignIn", regData)
       .done(function(response) {
-        
+         var response = data;
         console.log(data, response);
 
         if (response.IsValid === "false") {
