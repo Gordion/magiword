@@ -152,7 +152,7 @@
 				var user = JSON.parse(localStorage.getItem('user'));
 				var params = 'guid=' + user.guid;
 
-				$.post( "http://transleet.somee.com/translationHelper/WebHandler.ashx?method=GetAllWords", params)
+				$.post( "https://hybro.in.ua/roma.php?method=GetAllWords", params)
 					.done(function(response) {
 						var data = JSON.parse(response);
 						console.log(data, response);
