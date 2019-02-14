@@ -154,9 +154,9 @@
 
 				$.post( "https://hybro.in.ua/roma.php?method=GetAllWords", params)
 					.done(function(response) {
-// 						var data = JSON.parse(response);
+ 						var data = response;
 						console.log(response);
-
+				
 						data.words.forEach(function(item){
 							console.log(item);
 							$('#well-memorized-words').append('<p class="text-center">' + item + '</p>');
