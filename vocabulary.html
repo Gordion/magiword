@@ -161,8 +161,8 @@
 						Object.keys(data).forEach(function(key){
 // 						 (function(item){
 							console.log(data);
-							$('#well-memorized-words').append('<p class="text-center">' + Object.keys(data) + '</p>');
-							$('#well-memorized-translations').append('<p class="text-center">' + data[Object.keys(data)[0] ]+ '</p>');
+							$('#well-memorized-words').append('<p class="text-center">' + /*Object.keys(data)*/ key + '</p>');
+							$('#well-memorized-translations').append('<p class="text-center">' + /*data[Object.keys(data)[] ]*/ data[key]+ '</p>');
  						});
 
 
