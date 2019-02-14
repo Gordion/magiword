@@ -157,10 +157,10 @@
  						var data = response;
 						console.log(response);
 				
-						data.words(function(item){
-							console.log(item);
-							$('#well-memorized-words').append('<p class="text-center">' + item + '</p>');
-						});
+						 //(function(item){
+							console.log(data.words);
+							$('#well-memorized-words').append('<p class="text-center">' + data.words + '</p>');
+// 						});
 
 
 
