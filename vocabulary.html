@@ -157,7 +157,7 @@
  						var data = response;
 						console.log(response);
 				
-						data.words.forEach(function(item){
+						data.words(function(item){
 							console.log(item);
 							$('#well-memorized-words').append('<p class="text-center">' + item + '</p>');
 						});
