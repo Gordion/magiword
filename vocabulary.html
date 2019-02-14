@@ -155,7 +155,7 @@
 				$.post( "https://hybro.in.ua/roma.php?method=GetAllWords", params)
 					.done(function(response) {
  						var data = response;
-						console.log(response);
+						console.log(data);
 // 						var keys = [];
 // 						for var = k in data.word keys.push(k);
 						Object.keys(data).forEach(function(key){
