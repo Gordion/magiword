@@ -260,3 +260,7 @@ div.vocabulary{
 	  flex: 1;
 	}
 }
+
+.logged-in .quit-link {
+  display: none;
+}
