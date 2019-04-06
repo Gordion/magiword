@@ -1,6 +1,6 @@
 {
-  "name": "Hello Extensions",
-  "description" : "Base Level Extension",
+  "name": "Magiword",
+  "description" : "Extension",
   "version": "1.0",
   "web_accessible_resources": ["http://transleet.somee.com/httpHndlr.ashx"],
   "browser_action": {
@@ -20,7 +20,7 @@
         "default": "Ctrl+Shift+F",
         "mac": "MacCtrl+Shift+F"
       },
-      "description": "Opens hello.html"
+      "description": "desc"
     }
   },
   "content_scripts": [
